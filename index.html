@@ -15,6 +15,7 @@
             display: flex;
             justify-content:space-between;
             align-items: center;
+            margin: 0 200px;
         }
         .nav-title{
             color: black;
@@ -50,18 +51,47 @@
             cursor: pointer;
 
         }
+
+        /*Header Section*/
+
+        .header{
+            background-color: #FFF8F3;
+        }
+
+        .banner{
+            display: flex;
+            align-items: center;
+            margin: 30px 30px 30px 150px;
+        
+        }
+        .banner-image{
+            width: 500px;
+        }
+
     </style>
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav>
-            <h3 class="nav-title">AH<span class="text-primary">S</span>AN Al BA<span class="text-primary">SH</span>AR</h3>
+            <h3 class="nav-title">AH<span class="text-primary">S</span>AN</h3>
             <ul>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><button class="btn-primary" type="button">Hire Me</button></li>
             </ul>
         </nav>
+        
+        <div class="banner">
+            <div class="banner-info">
+                <h3 class="banner-greeting">Hi, I am</h3>
+                <h1 class="banner-title">Ahsan Al Bashar</h1>
+                <p>a passionate Full Stack Developer with a knack for crafting innovative digital solutions. With a blend of creativity and technical expertise, I strive to bring ideas to life through elegant, efficient, and user-centric applications. Below are some highlights of my work</p>
+                <button class="btn-primary" type="button">Download CV</button>
+                <button class="btn-primary" type="button">Contact</button>
+            </div>
+
+            <img class="banner-image" src="images/hardy.png" alt="Ahsan">
+        </div>
 
     </header>
     <main>
