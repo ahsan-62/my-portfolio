@@ -55,6 +55,10 @@
 
       /*Header Section*/
 
+      main {
+        max-width: 1140px;
+        margin: 0 auto;
+      }
       .header {
         background-color: #fff8f3;
 
@@ -93,19 +97,60 @@
       /*Main Section*/
       .about {
         background-color: #fff8f3;
-        margin: 120px 230px;
+        margin: 120px 0;
         padding: 130px;
-        max-width: 1140px;
-        max-height: 550px;
       }
       .section-title {
         text-align: center;
+        font-size: 35px;
+        font-weight: 700;
       }
       .section-description {
         color: #757575;
         text-align: center;
         font-size: 18px;
       }
+
+      .about-section {
+        display: flex;
+        justify-content: space-around;
+      }
+      .about-info {
+        text-align: center;
+       
+      }
+      .about-title{
+        font-size: 20px;
+        font-weight: 400;
+        color: #757575;
+      }
+
+      #section-description {
+        margin: 0px 100px;
+      }
+
+      .skill-container{
+        display: flex;
+        margin-top: 60px;
+        justify-content: space-around;
+        
+      }
+      .skill{
+        text-align: justify;
+        height: 300px;
+        padding: 30px;
+        background-color: #faf8f8;
+        margin-right: 10px;
+      }
+      .skill-title{
+        font-size: 22px;
+      }
+      .skill-description{
+        color: #757575;
+      }
+
+
+
     </style>
   </head>
   <body>
@@ -138,6 +183,7 @@
       </div>
     </header>
     <main>
+      <div>
       <section class="about">
         <h3 class="section-title">About me</h3>
         <p class="section-description">
@@ -147,6 +193,78 @@
           while working with me. Delivering work within time and budget which
           meets clients requirements in our mata.
         </p>
+        <div class="about-section">
+        <div class="about-info">
+          <p class="about-title">Name:</p>
+          <h3 class="about-description">Ahsan Al Bashar</h3>
+        </div>
+        <div class="about-info">
+          <p class="about-title">Email:</p>
+          <h3 class="about-description">ahsan.cse.101792@gmail.com</h3>
+        </div>
+        <div class="about-info">
+          <p class="about-title">Date of Birth:</p>
+          <h3 class="about-description">05 March,1999</h3>
+        </div>
+        <div class="about-info">
+          <p class="about-title">From:</p>
+          <h3 class="about-description">Sherpur,Mymensingh</h3>
+        </div>
+      </div>
+      </section>
+    </div>
+
+      <section>
+        <h3 class="section-title">What I do</h3>
+        <p id="section-description" class="section-description">I have more than 10 years experience building software for clients all over the world. Below is a quick overview of my main technical skill sets and technologies i use. Want to find out more about my experience? Check out my online resume and project portfolio.</p>
+
+        <div class="skill-container">
+          <div class="skill">
+            <img src="images/icons/js.png" alt="js" class="skill-image">
+            <h3 class="skill-title">Vanilla JavaScript</h3>
+            <p class="skill-description">List skill/technologies here.You can change the icon above to any of the 1500+ FontAwesome 5 free icons available Aenean commodo ligul eget dolor.</p>
+          </div>
+          <div class="skill">
+            <img src="images/icons/react.png" alt="react" class="skill-image">
+            <h3 class="skill-title">React</h3>
+            <p class="skill-description">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available.Aenean commodo ligula eget dolor.</p>
+          </div>
+          <div class="skill">
+            <img src="images/icons/nodejs.png" alt="node.js" class="skill-image">
+            <h3 class="skill-title">Node.js</h3>
+            <p class="skill-description">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+          </div>
+          <div class="skill">
+            <img src="images/icons/mongo.png" alt="mongodb" class="skill-image">
+            <h3 class="skill-title">MongoDB</h3>
+            <p class="skill-description">List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3 class="section-title">A summary of My Resume</h3>
+        <div class="summary-resume">
+          <div class="education">
+            <div class="education-details">
+              <h2 class="education-title"></h2>
+              <h1 class="education-institution"></h1>
+              <p class="education-description"></p>
+            </div>
+            <div class="education-details">
+              <h2 class="education-title"></h2>
+              <h1 class="education-institution"></h1>
+              <p class="education-description"></p>
+            </div>
+            <div class="education-details">
+              <h2 class="education-title"></h2>
+              <h1 class="education-institution"></h1>
+              <p class="education-description"></p>
+            </div>
+          </div>
+          <div class="experience">
+
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
