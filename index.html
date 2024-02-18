@@ -1,104 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body{
-            font-family: 'Open Sans', sans-serif;
-        }
-        nav{
-            display: flex;
-            justify-content:space-between;
-            align-items: center;
-            margin: 0 200px;
-        }
-        .nav-title{
-            color: black;
-            font-weight: 800;
-            font-size: 45px;
-        }
-        .text-primary{
-            color: orange;
-        }
-        nav>ul{
-            display: flex;
-            align-items: center;
-            
-        }
-        nav li{
-            list-style: none;
-            margin-left: 50px;
-        }
-        nav a{
-            text-decoration: none;
-            color: black;
-        }
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 200px;
+      }
+      .nav-title {
+        color: black;
+        font-weight: 800;
+        font-size: 45px;
+      }
+      .text-primary {
+        color: orange;
+      }
+      nav > ul {
+        display: flex;
+        align-items: center;
+      }
+      nav li {
+        list-style: none;
+        margin-left: 50px;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+      }
 
-        .btn-primary{
-            color: white;
-            font-weight: 700;
-            font-size: 20px; 
-            border: 0;
-            padding: 10px 20px;
-            height: 40px;
-            border-radius: 5px;
-            background-color: orange;
-            cursor: pointer;
+      .btn-primary {
+        color: white;
+        font-weight: 700;
+        font-size: 20px;
+        border: 0;
+        padding: 10px 20px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: orange;
+        cursor: pointer;
+      }
 
-        }
+      /*Header Section*/
 
-        /*Header Section*/
+      .header {
+        background-color: #fff8f3;
 
-        .header{
-            background-color: #FFF8F3;
-        }
+        background-image: url(images/header_bg.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+      }
 
-        .banner{
-            display: flex;
-            align-items: center;
-            margin: 30px 30px 30px 150px;
-        
-        }
-        .banner-image{
-            width: 500px;
-        }
+      .banner {
+        display: flex;
+        align-items: center;
+        margin: 30px 30px 30px 150px;
+        justify-content: space-between;
+      }
+      .banner-image {
+        width: 500px;
+      }
+      .banner-info {
+        max-width: 500px;
+      }
+      .banner-greeting {
+        font-size: 45px;
+        font-weight: 600;
+      }
+      .banner-title {
+        font-size: 50px;
+      }
 
+      .banner-description {
+        font-size: 18px;
+        color: #757575;
+        margin-bottom: 30px;
+        text-align: justify;
+      }
+
+      /*Main Section*/
+      .about {
+        background-color: #fff8f3;
+        margin: 120px 230px;
+        padding: 130px;
+        max-width: 1140px;
+        max-height: 550px;
+      }
+      .section-title {
+        text-align: center;
+      }
+      .section-description {
+        color: #757575;
+        text-align: center;
+        font-size: 18px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <nav>
-            <h3 class="nav-title">AH<span class="text-primary">S</span>AN</h3>
-            <ul>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><button class="btn-primary" type="button">Hire Me</button></li>
-            </ul>
-        </nav>
-        
-        <div class="banner">
-            <div class="banner-info">
-                <h3 class="banner-greeting">Hi, I am</h3>
-                <h1 class="banner-title">Ahsan Al Bashar</h1>
-                <p>a passionate Full Stack Developer with a knack for crafting innovative digital solutions. With a blend of creativity and technical expertise, I strive to bring ideas to life through elegant, efficient, and user-centric applications. Below are some highlights of my work</p>
-                <button class="btn-primary" type="button">Download CV</button>
-                <button class="btn-primary" type="button">Contact</button>
-            </div>
+      <nav>
+        <h3 class="nav-title">AH<span class="text-primary">S</span>AN</h3>
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><button class="btn-primary" type="button">Hire Me</button></li>
+        </ul>
+      </nav>
 
-            <img class="banner-image" src="images/hardy.png" alt="Ahsan">
+      <div class="banner">
+        <div class="banner-info">
+          <h3 class="banner-greeting">Hi, I am</h3>
+          <h1 class="banner-title">Ahsan Al Bashar</h1>
+          <p class="banner-description">
+            a passionate Full Stack Developer with a knack for crafting
+            innovative digital solutions. With a blend of creativity and
+            technical expertise, I strive to bring ideas to life through
+            elegant, efficient, and user-centric applications. Below are some
+            highlights of my work
+          </p>
+          <button class="btn-primary" type="button">Download CV</button>
+          <button class="btn-primary" type="button">Contact</button>
         </div>
 
+        <img class="banner-image" src="images/hardy.png" alt="Ahsan" />
+      </div>
     </header>
     <main>
-
+      <section class="about">
+        <h3 class="section-title">About me</h3>
+        <p class="section-description">
+          I, m a designer and developer with a passion for web design. I enjoy
+          developing simple, clean and slick websites that provide real value to
+          the end user. Thousands of clients have procured exceptional resulfs
+          while working with me. Delivering work within time and budget which
+          meets clients requirements in our mata.
+        </p>
+      </section>
     </main>
-    <footer>
-        
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
