@@ -10,204 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        font-family: "Open Sans", sans-serif;
-      }
-      nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 200px;
-      }
-      .nav-title {
-        color: black;
-        font-weight: 800;
-        font-size: 45px;
-      }
-      .text-primary {
-        color: orange;
-      }
-      nav > ul {
-        display: flex;
-        align-items: center;
-      }
-      nav li {
-        list-style: none;
-        margin-left: 50px;
-      }
-      nav a {
-        text-decoration: none;
-        color: black;
-      }
-
-      .btn-primary {
-        color: white;
-        font-weight: 700;
-        font-size: 20px;
-        border: 0;
-        padding: 10px 20px;
-        height: 40px;
-        border-radius: 5px;
-        background-color: orange;
-        cursor: pointer;
-      }
-
-      /*Header Section*/
-
-      main {
-        max-width: 1140px;
-        margin: 0 auto;
-      }
-      .header {
-        background-color: #fff8f3;
-
-        background-image: url(images/header_bg.png);
-        background-repeat: no-repeat;
-        background-position: bottom right;
-      }
-
-      .banner {
-        display: flex;
-        align-items: center;
-        margin: 30px 30px 30px 150px;
-        justify-content: space-between;
-      }
-      .banner-image {
-        width: 500px;
-      }
-      .banner-info {
-        max-width: 500px;
-      }
-      .banner-greeting {
-        font-size: 45px;
-        font-weight: 600;
-      }
-      .banner-title {
-        font-size: 50px;
-      }
-
-      .banner-description {
-        font-size: 18px;
-        color: #757575;
-        margin-bottom: 30px;
-        text-align: justify;
-      }
-
-      /*Main Section*/
-      .about {
-        background-color: #fff8f3;
-        margin: 120px 0;
-        padding: 130px;
-      }
-      .section-title {
-        text-align: center;
-        font-size: 35px;
-        font-weight: 700;
-      }
-      .section-description {
-        color: #757575;
-        text-align: center;
-        font-size: 18px;
-      }
-
-      .about-section {
-        display: flex;
-        justify-content: space-around;
-      }
-      .about-info {
-        text-align: center;
-       
-      }
-      .about-title{
-        font-size: 20px;
-        font-weight: 400;
-        color: #757575;
-      }
-
-      #section-description {
-        margin: 0px 100px;
-      }
-
-      .skill-container{
-        display: flex;
-        margin-top: 60px;
-        justify-content: space-around;
-        
-      }
-      .skill{
-        text-align: justify;
-        height: 300px;
-        padding: 30px;
-        background-color: #faf8f8;
-        margin-right: 10px;
-      }
-      .skill-title{
-        font-size: 22px;
-      }
-      .skill-description{
-        color: #757575;
-      }
-
-      /*Education & Experiences Section*/
-
-      .summary-resume{
-        display: flex;
-        margin-top: 60px;
-      }
-      .education{
-        width: 50%;
-        margin-right: 20px;
-        text-align: justify;
-      }
-
-      .education-theme{
-        font-size:30px;
-        color:#2b2929;
-      }
-
-      .education-title{
-        font-size: 25px;
-        
-      }
-      .education-institution{
-        font-size: 18px;
-        color: #757575;
-
-      }
-      .education-description{
-
-        font-size: 15px;
-        color:#757575;
-      }
-
-     .cv-button{
-      margin-top: 20px;
-      text-align: center;
-     }
-
-     /*Footer Section*/
-
-     .footer-title{
-      text-align: center;
-      font-size: 35px;
-      font-weight: 700;
-     }
-
-     footer{
-      display: flex;
-      background-color: #fff8f3;
-      margin-top: 100px;
-      padding: 130px 200px;
-      
-     }
-
-     
-
-    
-
-
-    </style>
+   <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <header class="header">
@@ -362,9 +165,16 @@
       </div>
       <div class="footer-section">
         <h3 class="footer-title">Let’s Message me</h3>
+        <div class="contact">
+          <input type="text" name="name" id="" placeholder="Your Name">
+          <input type="email" name="email" id="" placeholder="Your Email">
+          <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+          <input class="btn-primary" type="button" value="Submit">
+        </div>
       </div>
-
-
     </footer>
+    <div class="copyright">
+      <p>Copyright © 2024 Ahsan. All rights reserved.</p>
+    </div>
   </body>
 </html>
